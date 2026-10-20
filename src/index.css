@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  /* primitives — DS-01-Colors */
+  --plum-900: #28011F;
+  --plum-800: #3A0233;
+  --plum-700: #4E0D45;
+  --plum-600: #53224C;
+  --lav-100: #F5ECF5;
+  --lav-200: #EEDDEE;
+  --mist-300: #BEC3CA;
+  --gold-700: #9A7424;
+  --gold-500: #C9A24B;
+  --gold-100: #F6EDD8;
+  --n-0: #FFFFFF;
+  --n-50: #FAF8F3;
+  --n-100: #F2EFE9;
+  --n-200: #E6E0D3;
+  --n-400: #9AA39E;
+  --n-600: #5D6B64;
+  --n-900: #13201A;
+  --green-600: #2E7D4F;
+  --green-50: #E7F3EC;
+  --amber-600: #B26B12;
+  --amber-50: #FBF0DC;
+  --red-600: #B42318;
+  --red-50: #FCE9E7;
+
+  /* semantic tokens */
+  --brand: var(--plum-800);
+  --brand-hover: var(--plum-700);
+  --brand-pressed: var(--plum-900);
+  --bg-page: var(--n-50);
+  --bg-surface: var(--n-0);
+  --bg-subtle: var(--n-100);
+  --bg-inverse: var(--plum-800);
+  --text-primary: var(--n-900);
+  --text-secondary: var(--n-600);
+  --text-muted: var(--n-400);
+  --text-brand: var(--plum-800);
+  --text-on-brand: var(--n-0);
+  --text-accent: var(--gold-700);
+  --text-accent-on-brand: var(--gold-500);
+  --border: var(--n-200);
+  --border-strong: var(--n-400);
+  --border-focus: var(--gold-500);
+  --accent-gold: var(--gold-500);
+  --accent-gold-subtle: var(--gold-100);
+  --accent-lavender: var(--lav-200);
+  --accent-lavender-subtle: var(--lav-100);
+  --accent-ring: var(--mist-300);
+  --success: var(--green-600);
+  --success-subtle: var(--green-50);
+  --warning: var(--amber-600);
+  --warning-subtle: var(--amber-50);
+  --error: var(--red-600);
+  --error-subtle: var(--red-50);
+
+  /* typography */
+  --sans: "DM Sans", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+  --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --arabic-display: "El Messiri", "Cairo", "Noto Sans Arabic", "Segoe UI", "Geeza Pro", Tahoma, sans-serif;
+  --arabic: "Cairo", "Noto Sans Arabic", "Segoe UI", "Geeza Pro", Tahoma, sans-serif;
+  --r: 22px;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-page: #160511;
+  --bg-surface: #21091B;
+  --bg-subtle: #2D1026;
+  --bg-inverse: #0E030B;
+  --text-primary: #F5ECF5;
+  --text-secondary: #BEC3CA;
+  --text-muted: #8C8590;
+  --text-brand: #EEDDEE;
+  --text-accent: #C9A24B;
+  --border: #3A1D33;
+  --border-strong: #6B4A63;
+  --brand: #C9A24B;
+  --brand-hover: #D9B868;
+  --brand-pressed: #9A7424;
+  --text-on-brand: #28011F;
+  --accent-lavender: #3A1D33;
+  --accent-lavender-subtle: #2D1026;
+  --accent-gold-subtle: #3B2A10;
+  --success: #5CC489;
+  --success-subtle: #12301F;
+  --warning: #F0A848;
+  --warning-subtle: #3B2A10;
+  --error: #F97066;
+  --error-subtle: #3A1214;
+}
+
+:root[lang="ar"] body {
+  font-family: var(--arabic);
+}
+
+:root[lang="ar"] * {
+  letter-spacing: 0 !important;
+}
+
+/* Custom design system utility classes */
+.font-serif-fraunces {
+  font-family: var(--serif);
+}
+
+.font-sans-dm {
+  font-family: var(--sans);
+}
+
+.font-mono-dm {
+  font-family: var(--mono);
+}
+
+.font-arabic-cairo {
+  font-family: var(--arabic);
+}
+
+.bg-dz-page {
+  background-color: var(--bg-page);
+}
+
+.bg-dz-surface {
+  background-color: var(--bg-surface);
+}
+
+.bg-dz-subtle {
+  background-color: var(--bg-subtle);
+}
+
+.bg-dz-brand {
+  background-color: var(--brand);
+}
+
+.text-dz-primary {
+  color: var(--text-primary);
+}
+
+.text-dz-secondary {
+  color: var(--text-secondary);
+}
+
+.text-dz-brand {
+  color: var(--text-brand);
+}
+
+.text-dz-accent {
+  color: var(--text-accent);
+}
+
+.border-dz {
+  border-color: var(--border);
+}

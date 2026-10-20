@@ -1,0 +1,6 @@
+{
+  "name": "DZ-Bridge - Algerian Expert & Diaspora Matchmaking API",
+  "description": "Production-grade API ecosystem and matchmaking platform connecting Algerian diaspora scholars and local experts with universities and research institutes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
